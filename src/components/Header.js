@@ -13,7 +13,7 @@ const Header = () => {
               alt=""
               src="/aaghash-logo-light-theme-1@2x.png"
             />
-            <div className="logo-title">aaghashm</div>
+            <div className="logo-title">CGPA BUDDY</div>
           </div>
           <div className="quick-calc-frame">
             <div className="mark-calculation-removebg-prev">
