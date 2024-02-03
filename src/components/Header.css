@@ -1,0 +1,305 @@
+.menu-items {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-lavender);
+}
+.aaghash-logo-light-theme-1 {
+  height: 56px;
+  width: 62.5px;
+  position: relative;
+  object-fit: cover;
+}
+.logo-title {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+
+.about,
+.contact,
+.home {
+  position: relative;
+  line-height: 100%;
+}
+/* Add hover effect to Home */
+.home:hover {
+  color: #0B87AC; /* Add your desired hover color for HOME */
+  font-weight: bold; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
+}
+.about:hover {
+  color: #0B87AC; /* Add your desired hover color for HOME */
+  font-weight: bold; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
+}
+.contact:hover {
+  color: #0B87AC; /* Add your desired hover color for HOME */
+  font-weight: bold; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
+}
+
+/* Disable text cursor */
+.calculate-now-button1 .home,
+.calculate-now-button1 .about,
+.calculate-now-button1 .contact {
+  cursor: default; /* Set cursor to default (not turning to typing) */
+}
+
+.aaghash-logo-frame,
+.an-body,
+.analyse-image,
+.analyse-image1,
+.analyze-compare-rectangle,
+.analyze-content-frame,
+.analyze-content-frame1,
+.analyze-frame,
+.analyze-now-button,
+.analyze-title,
+.calculate-now-button,
+.contact-text,
+.f-r-a-m-e-c-o-n-t-a-c-t,
+.footer,
+.footer-bottom-frame,
+.footer-bottom-frame1,
+.footer-bottom-frame2,
+.footer-frame,
+.footer-frame1,
+.footer-title-frame,
+.footer-top-frame,
+.footer-top-frame1,
+.footer-top-frame2,
+.frame-container,
+.frame-div,
+.frame-wrapper,
+.frame-wrapper1,
+.frame-wrapper2,
+.frame-wrapper3,
+.frame-wrapper4,
+.frame-wrapper5,
+.frame-wrapper6,
+.frame-wrapper7,
+.frame-wrapper8,
+.frame-wrapper9,
+.frame-x,
+.framehomeabout-x,
+.header-frame,
+.home-a-b-o-u-t,
+.home-a-b-o-u-t-text,
+.home-a-b-o-u-t-text-inner,
+.home-about-frame,
+.home-about-frame1,
+.home-about-title,
+.home-page-frame,
+.imageqc,
+.interactive-button-frame,
+.logo-frame,
+.logo-frame1,
+.logo-frame2,
+.logo-rectangle,
+.mail-id-w-image-frame,
+.mail-id-widget,
+.mail-id-widget-wrapper,
+.mailid-image-frame,
+.mailidwimage,
+.mailidwimage-inner,
+.menu-items-container,
+.menu-items-frame,
+.menu-items-frame1,
+.pp-tc-container,
+.profile-icon-container,
+.profile-icon-container-wrapper,
+.q-c-button-instance,
+.quick-calc-frame1,
+.quick-calculate-frame,
+.quick-calculate-title,
+.social-icon-instance,
+.social-icons-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.calculate-now-button {
+  flex-direction: row;
+  gap: var(--gap-7xl);
+}
+.mark-calculation-removebg-prev {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.iconfilluser {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.profile-icon {
+  align-self: stretch;
+  width: 62px;
+  border-radius: var(--br-181xl);
+  background-color: var(--primary-blue-50);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.profile-icon :hover{
+      opacity: .7;
+      transition:  0.3s ease;
+}
+.quick-calc-frame {
+  align-self: stretch;
+  width: 579px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-11xl);
+  font-size: var(--menu-size);
+}
+.logo-container,
+.menu-items1,
+.quick-calc-frame {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.menu-items1 {
+  align-self: stretch;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.logo-container {
+  width: 1129px;
+  height: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-4xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslategray);
+  font-family: var(--menu);
+}
+.image-1-1 {
+  height: 441px;
+  width: 527px;
+  position: absolute;
+  margin: 0 !important;
+  right: -408px;
+  bottom: -83px;
+  object-fit: cover;
+  z-index: 1;
+}
+.cgpa {
+  color: var(--color-mediumseagreen);
+}
+.easy-cgpa-calculator-container {
+  margin: 0;
+  height: 256px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.page-title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 2;
+}
+.title-frame {
+  width: 719px;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.header,
+.p-p-f-terms-frame,
+.title-frame {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.p-p-f-terms-frame {
+  width: 1129px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.header {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-51xl) var(--padding-10xl) var(--padding-72xl)
+    var(--padding-xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-148xl);
+  text-align: left;
+  font-size: var(--font-size-109xl);
+  color: var(--color-darkslategray);
+  font-family: var(--menu);
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    gap: var(--gap-148xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .calculate-now-button {
+    display: none;
+  }
+  .easy-cgpa-calculator-container {
+    font-size: var(--font-size-32xl);
+    line-height: 77px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header {
+    gap: var(--gap-148xl);
+    padding-top: var(--padding-26xl);
+    padding-bottom: var(--padding-40xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .easy-cgpa-calculator-container {
+    font-size: var(--font-size-13xl);
+    line-height: 51px;
+  }
+  .header {
+    gap: var(--gap-148xl);
+  }
+}

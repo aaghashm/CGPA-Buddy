@@ -1,0 +1,22 @@
+.home-page {
+  width: 100%;
+  position: relative;
+  background-color: #f2f4f7;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-42xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .home-page {
+    gap: var(--gap-42xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .home-page {
+    gap: var(--gap-42xl);
+  }
+}
