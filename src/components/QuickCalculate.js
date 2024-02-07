@@ -1,6 +1,13 @@
-import "./QuickCalculate.css";
+import { useNavigate } from 'react-router-dom';
 
 const QuickCalculate = () => {
+  const navigate = useNavigate();
+
+  const handleCalculateNowClick = () => {
+    navigate('/QuickCalculate');
+  
+  };
+
   return (
     <section className="quick-calculate">
       <div className="image-qc">
@@ -8,7 +15,7 @@ const QuickCalculate = () => {
           className="mark-calculation-removebg-prev-icon"
           loading="eager"
           alt=""
-          src="/mark-calculationremovebgpreview-1@2x.png"
+          src="/Quick Calculate.png"
         />
       </div>
       <div className="arrow-vector">
@@ -18,8 +25,7 @@ const QuickCalculate = () => {
               <div className="frame-wrapper11">
                 <div className="quick-calculate-cgpa-wrapper">
                   <h1 className="quick-calculate-cgpa">
-                    {" "}
-                    QUICK CALCULATE CGPA
+                  {" "}QUICK CALCULATE CGPA
                   </h1>
                 </div>
               </div>
@@ -29,9 +35,9 @@ const QuickCalculate = () => {
           <div className="qc-body">
             ENTER YOUR GRADES TO QUICKLY CALCULATE YOUR CGPA.
           </div>
-          <button className="calculate-now-button1">
+          <button className="calculate-now-button1" onClick={handleCalculateNowClick}>
             <div className="analyze-now-button-frame">
-              <b className="qcb-body">{`CALCULATE NOW `}</b>
+              <b className="qcb-body">CALCULATE NOW</b>
             </div>
             <img
               className="calculate-now-button-child"

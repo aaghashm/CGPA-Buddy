@@ -1,37 +1,56 @@
-import "./Analyze.css";
+import "./QuickCalculate.css";
+import { useNavigate } from 'react-router-dom';
+const QuickCalculate = () => {
+  const navigate = useNavigate();
 
-const Analyze = () => {
+  const handleAnalyzeClick = () => {
+    navigate('/Comingsoon');
+  
+  };
+
   return (
-    <section className="analyze">
-      <div className="analyze-content">
-        <div className="footer-bottom-frame3">
-          <div className="q-c-frame">
-            <div className="analyze-title1">
-              <h1 className="analyze-compare"> ANALYZE / COMPARE</h1>
+    <section className="quick-calculate">
+      
+      <div className="arrow-vector">
+        <div className="quick-calculate-content">
+          <div className="frame-parent">
+            <div className="frame-wrapper10">
+              <div className="frame-wrapper11">
+                <div className="quick-calculate-cgpa-wrapper">
+                  <h1 className="quick-calculate-cgpa">
+                    {" "}
+                    ANALYZE / COMPARE
+                  </h1>
+                </div>
+              </div>
             </div>
-            <div className="button1">
-              <div className="qcbbody" />
-            </div>
+            <div className="button" />
           </div>
-          <div className="an-body1">
-            Analyze your grades and see how you compare to other students.
+          <div className="qc-body">
+            Analyze your grades and see how you compare   to other students.
           </div>
-          <button className="analuse-button">
-            <div className="analyseimageframe">
-              <b className="analyze-now">{`ANALYZE NOW `}</b>
+          <button className="calculate-now-button1" onClick={handleAnalyzeClick}>
+            <div className="analyze-now-button-frame">
+              <b className="qcb-body">{`ANALYZE NOW `}</b>
             </div>
-            <img className="analuse-button-child" alt="" src="/arrow-1.svg" />
+            <img
+              className="calculate-now-button-child"
+              alt=""
+              src="/arrow-1.svg"
+            />
           </button>
         </div>
       </div>
-      <img
-        className="analyse-image-icon"
-        loading="eager"
-        alt=""
-        src="/analyse-image@2x.png"
-      />
+      <div className="image-qc">
+        <img
+          className="mark-calculation-removebg-prev-icon"
+          loading="eager"
+          alt=""
+          src="/Analyze now.png"
+        />
+      </div>
     </section>
   );
 };
 
-export default Analyze;
+export default QuickCalculate;

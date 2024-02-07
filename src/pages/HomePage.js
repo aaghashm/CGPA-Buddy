@@ -7,7 +7,7 @@ import "./HomePage.css";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Header />
+      <Header titleWord1="EASY" titleWord2="CGPA" titleWord3="CALCULATOR" image='HomePage img.png'/>
       <QuickCalculate />
       <Analyze />
       <Footer />

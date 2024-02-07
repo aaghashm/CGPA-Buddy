@@ -5,7 +5,9 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import QuickCGPACalculator from "./pages/QuickCGPACalculator";
 import HomePage from "./pages/HomePage";
+import ComingSoonPage from "./pages/ComingSoonPage";
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +48,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/QuickCalculate" element={<QuickCGPACalculator />} />
+      <Route path="/Comingsoon" element={<ComingSoonPage />} />
     </Routes>
   );
 }

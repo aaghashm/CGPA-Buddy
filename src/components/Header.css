@@ -31,12 +31,22 @@
   justify-content: flex-start;
   gap: var(--gap-10xs);
 }
-
+.logo:hover{
+  opacity: .9;
+  transition: 0.3s ease;
+}
+.logo-title:hover{
+  opacity: .9;
+  transition: 0.3s ease;
+}
 .about,
 .contact,
 .home {
+  text-decoration: none;
   position: relative;
   line-height: 100%;
+  color: inherit;
+  font-weight: bold; 
 }
 /* Add hover effect to Home */
 .home:hover {

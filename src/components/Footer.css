@@ -64,7 +64,14 @@
   position: relative;
   line-height: 170%;
   white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
 }
+.mailid:hover {
+  color: #0B87AC; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
+}
+
 .mail-iid-w-image,
 .mailid {
   display: flex;
@@ -79,6 +86,14 @@
 .terms-conditions {
   position: relative;
   line-height: 170%;
+}
+.ppf:hover {
+  color: #0B87AC; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
+}
+.terms-conditions:hover {
+  color: #0B87AC; /* Optionally make the text bold on hover */
+  transition:  0.3s ease;
 }
 .pp-and-tc {
   display: flex;
@@ -125,6 +140,18 @@
   font-size: var(--font-size-45xl);
   color: var(--color-darkslategray);
   font-family: var(--menu);
+}
+.social-icons1:hover{
+  opacity: .7;
+  transition:  0.3s ease;
+}
+.social-icons2:hover{
+  opacity: .7;
+  transition:  0.3s ease;
+}
+.social-icons3:hover{
+  opacity: .7;
+  transition:  0.3s ease;
 }
 @media screen and (max-width: 1050px) {
   .footer-titlr {
