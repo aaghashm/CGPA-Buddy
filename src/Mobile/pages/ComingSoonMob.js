@@ -23,7 +23,7 @@ const ComingSoonPageMob = () => {
         </h1>
         <button className="CALCULATE-NOW-BUTTON1" onClick={handlereturnhomemob} >
             <div className="ANALYZE-NOW-BUTTON-FRAME">
-              <b className="QCB-BODY">CALCULATE NOW</b>
+              <b className="QCB-BODY">RETURN HOME</b>
             </div>
             <img
               className="CALCULATE-NOW-BUTTON-CHILD"
