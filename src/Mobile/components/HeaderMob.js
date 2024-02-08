@@ -1,5 +1,6 @@
 import React from 'react';
 import "./HeaderMob.css";
+import { Link } from 'react-router-dom';
 
 const HEADERMOB = ({ image, word1, word2, word3 }) => {
   return (
@@ -15,7 +16,7 @@ const HEADERMOB = ({ image, word1, word2, word3 }) => {
       </div>
       <div className="MENU-ITEMS-PARENT">
         <div className="MENU-ITEMS">
-          <div className="LOGO">
+          <Link to={"/"} className="LOGO">
             <img
               className="AAGHASH-LOGO-LIGHT-THEME-1"
               loading="eager"
@@ -23,23 +24,23 @@ const HEADERMOB = ({ image, word1, word2, word3 }) => {
               src="/aaghash-logo.png"
             />
             <h2 className="LOGO-TITLE">CGPA BUDDY</h2>
-          </div>
+          </Link>
           <header className="FRAME-PARENT">
             <div className="FRAME-WRAPPER">
               <div className="HOME-PARENT">
-                <h3 className="HOME">HOME</h3>
-                <h3 className="ABOUT">ABOUT</h3>
-                <h3 className="CONTACT">CONTACT</h3>
+                <Link to={"/"} className="HOME">HOME</Link>
+                <Link to={"/Comingsoon"} className="ABOUT">ABOUT</Link>
+                <Link to={"/Comingsoon"}className="CONTACT">CONTACT</Link>
               </div>
             </div>
-            <div className="PROFILE-ICON-WRAPPER">
+            <Link to={"/Comingsoon"} className="PROFILE-ICON-WRAPPER">
               <img
                 className="PROFILE-ICON"
                 loading="eager"
                 alt=""
                 src="/iconfilluser@2x.png"
               />
-            </div>
+            </Link>
           </header>
         </div>
         <div className="PAGE-TITLE">

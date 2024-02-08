@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ComingSoonPage from "./pages/ComingSoonPage";
 import MobileHomePage from "./Mobile/pages/MobileHomePage";
 import ComingSoonPageMob from "./Mobile/pages/ComingSoonMob";
+import QuickCGPAMob from "./Mobile/pages/QuickCGPAMob";
 
 function App() {
   // State to track whether the screen size is mobile or not
@@ -30,7 +31,10 @@ function App() {
         path="/"
         element={isMobile ? <MobileHomePage /> : <HomePage />}
       />
-      <Route path="/QuickCalculate" element={<QuickCGPACalculator />} />
+      <Route
+        path="/QuickCalculate"
+        element={isMobile ? <QuickCGPAMob /> : <QuickCGPACalculator />}
+      />
       <Route
         path="/Comingsoon"
         element={isMobile ? <ComingSoonPageMob /> : <ComingSoonPage />}
