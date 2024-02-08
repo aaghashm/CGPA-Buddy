@@ -1,0 +1,125 @@
+.under-construction {
+    color: #f97066;
+}
+
+.this-page-is-container {
+    margin: 0;
+    align-self: stretch;
+    height: fit-content;
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 38px;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: "Seira Condensed";
+    display: inline-block;
+}
+
+.very-soon {
+    color: var(--color-mediumseagreen);
+}
+
+.but-dont-worry-container {
+    
+    width: 312px;
+    position: relative;
+    font-size: 22px; /* Applied absolute font size */
+    line-height: 100%;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    color: var(--color-black);
+    padding-bottom: 20px;
+}
+
+.qcb-body1 {
+    position: relative;
+    font-size: 16px; /* Applied absolute font size */
+    line-height: 100%;
+    font-family: var(--font-saira-condensed);
+    color: var(--color-gray);
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px; /* Applied absolute padding */
+}
+
+.inner-rectangle-frame {
+    flex: 1;
+    border-radius: 20px;
+    width: 10%;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 51px 22px;
+    text-align: center;
+    font-size: 60px; /* Applied absolute font size */
+    color: var(--color-darkslategray);
+    font-family: var(--font-saira-condensed);
+}
+
+.coming-soon-page-mob {
+    width: 100%;
+    height: 100vh; /* Set height to full viewport height */
+    display: flex;
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: var(--color-lavender);
+    overflow: hidden;
+    padding: 58px 24px 58px 21px; /* Applied absolute padding */
+    box-sizing: border-box;
+}
+
+
+
+.QCB-BODY {
+    position: relative;
+    font-size: 16px; /* Replaced with specific font size */
+    line-height: 100%;
+    font-family: Arial; /* Replaced with specific font family */
+    color: #1e2023; /* Replaced with specific color value */
+    text-align: left;
+  }
+  
+  .ANALYZE-NOW-BUTTON-FRAME {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs);
+  }
+  .CALCULATE-NOW-BUTTON-CHILD {
+    height: 29.5px;
+    width: 30px;
+    position: relative;
+    padding-right: 10px;
+  }
+  
+  .CALCULATE-NOW-BUTTON1 {
+    cursor: pointer;
+    border: 0;
+    padding: 2px;
+    background-color: var(--color-mediumseagreen);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    row-gap: 20px;
+    max-width: 100%;
+  }
+  
+  .CALCULATE-NOW-BUTTON1:hover {
+    transform: scale(1.03);
+    opacity: .9;
+    transition: transform 0.3s ease;
+  }
