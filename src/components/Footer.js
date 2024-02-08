@@ -17,7 +17,7 @@ const Footer = () => {
               alt=""
               src="/social-icons.svg"
             /></a>
-            <a href="https:github.com/aaghashm" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/aaghashm" target="_blank" rel="noopener noreferrer">
             <img className="social-icons2" alt="" src="/social-icons-1.svg" /></a>
             <a href="https://bit.ly/aaghashm" target="_blank" rel="noopener noreferrer">
   <img className="social-icons3" alt="" src="/social-icons-2.svg" />

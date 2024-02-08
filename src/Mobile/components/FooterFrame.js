@@ -20,7 +20,7 @@ const FOOTERFRAME = () => {
                   alt=""
                   src="/social-icons.svg"
                 /></a>
-                <a href="https:github.com/aaghashm" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/aaghashm" target="_blank" rel="noopener noreferrer">
                 <img
                   className="SOCIAL-ICONS6"
                   alt=""
