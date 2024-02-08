@@ -103,14 +103,12 @@ const QuickCGPACalculator = () => {
     MECHANICAL: {
       semesters: {
         "1": [
-          /*{ subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting", credit: 3 },
-          { subject: "Applied Linear Algebra", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1 },
-          { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "RDBMS", credit: 3 },
-          { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 3 }*/
+          { subject: "Basic Electrical and Electronics Engineering", credit: 4 },
+          { subject: "Technical English", credit: 3 },
+          { subject: "Spoken English Laboratory", credit: 1.5 },
+          { subject: "Matrices, Differential Equations and Fourier Series", credit: 4 },
+          { subject: "Engineering Drawing", credit: 4 },
+          { subject: "Problem Solving Using C++", credit: 4 },
         ],
         "2": [
           { subject: "Calculas,Laplace Transforms and Statistics", credit: 4 },
@@ -189,7 +187,7 @@ const QuickCGPACalculator = () => {
         return;
       }
   
-      if (grade === 0) {
+      if (grade>100) {
         failedSubjects.push(subject);
         continue; // Skip failed subjects from calculation
       }
@@ -279,7 +277,7 @@ const QuickCGPACalculator = () => {
                 required
                 value={grades[subjectData.subject] || -1}
               >
-                <option value={-1} disabled>
+                <option value= {-1} disabled>
                   --Select Grade--
                 </option>
                 <option value={10}>10 (O)</option>
@@ -289,7 +287,7 @@ const QuickCGPACalculator = () => {
                 <option value={6}>6 (B)</option>
                 <option value={5}>5 (C+)</option>
                 <option value={4}>4 (C)</option>
-                <option value={0}>0 (U)</option>
+                <option value={999}>0 (U)</option>
               </Select>
             </div>
           </div>

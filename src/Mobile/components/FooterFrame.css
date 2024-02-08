@@ -1,0 +1,220 @@
+.FOOTER-CHILD {
+  height: 131px;
+  width: 412px;
+  position: relative;
+  background-color: #e0eaff; /* Replaced with specific color value */
+  display: none;
+  max-width: 100%;
+}
+
+.FOOTER-TITLR1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: 32px; /* Replaced with specific font size */
+  line-height: 100%;
+  font-weight: 700;
+  font-family: "Saira Condensed"; /* Replaced with specific font family */
+}
+
+.FOOTER-TITLE1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 120px;
+}
+
+.SOCIAL-ICONS5,
+.SOCIAL-ICONS6,
+.SOCIAL-ICONS7 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
+}
+.SOCIAL-ICONS5:hover{
+  opacity: .8;
+}
+
+.SOCIAL-ICONS6:hover{
+  opacity: .8;
+}
+
+.SOCIAL-ICONS7:hover{
+  opacity: .8;
+}
+.FOOTER-TOP1,
+.SOCIAL-ICONS4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SOCIAL-ICONS4 {
+  width: 166px;
+  justify-content: center;
+  padding: 20px 0; /* Replaced with specific padding value */
+  box-sizing: border-box;
+  gap: 20px; /* Replaced with specific gap value */
+  z-index: 1;
+}
+
+.FOOTER-TOP1 {
+  width: 350px;
+  justify-content: flex-start;
+  row-gap: 20px;
+  max-width: 103%;
+  flex-shrink: 0;
+}
+
+.MAIL-ICON1 {
+  height: 14px;
+  width: 20px;
+  position: relative;
+}
+
+.MAILIDF1 {
+  position: relative;
+  line-height: 170%;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000; /* Replaced with specific color value */
+}
+
+.MAIL-IID-W-IMAGE1,
+.MAILID1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MAIL-IID-W-IMAGE1 {
+  gap: 4px; /* Replaced with specific gap value */
+}
+.MAILIDF1 :hover{
+  color: #0b87ac;
+}
+.PPF1 :hover{
+  color: #0b87ac;
+}
+.TERMS-CONDITIONS1 :hover{
+  color: #0b87ac;
+}
+.PPF1,
+.TERMS-CONDITIONS1 {
+  position: relative;
+  line-height: 170%;
+}
+
+.FOOTER-BOTTOM1,
+.PP-AND-TC1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.PP-AND-TC1 {
+  align-items: center;
+  padding: 0 30px 0 0; /* Replaced with specific padding value */
+  gap: 30px; /* Replaced with specific gap value */
+}
+
+.FOOTER-BOTTOM1 {
+  align-items: flex-start;
+  gap: 20px; /* Replaced with specific gap value */
+  font-size: 10px; /* Replaced with specific font size */
+  color: #000; /* Replaced with specific color value */
+  font-family: "Inter"; /* Replaced with specific font family */
+}
+
+.FOOTER-TITLE-FRAME,
+.FOOTER2 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.FOOTER-TITLE-FRAME {
+  height: 102px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 26px; /* Replaced with specific gap value */
+  z-index: 1;
+}
+
+.FOOTER2 {
+  background-color: #e0eaff; /* Replaced with specific color value */
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 26px 0px 46px; /* Replaced with specific padding value */
+  box-sizing: border-box;
+}
+
+.ARROW-47-ICON1 {
+  height: 49.9px;
+  width: 49.9px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.FOOTER-FRAME,
+.FOOTER-FRAME1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #e0eaff; /* Replaced with specific color value */
+}
+
+.FOOTER-FRAME1 {
+  width: 551px;
+  justify-content: space-between;
+  gap: 20px; /* Replaced with specific gap value */
+  max-width: 133%;
+  flex-shrink: 0;
+}
+
+.FOOTER-FRAME {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 0 20px; /* Replaced with specific padding value */
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 32px; /* Replaced with specific font size */
+  color: #344054; /* Replaced with specific color value */
+  font-family: "Saira Condensed"; /* Replaced with specific font family */
+}
+
+@media screen and (max-width: 450px) {
+  .FOOTER-BOTTOM1,
+  .FOOTER-TOP1 {
+    flex-wrap: wrap;
+  }
+  .FOOTER-TITLE-FRAME {
+    height: auto;
+  }
+  .FOOTER-FRAME1 {
+    flex-wrap: wrap;
+  }
+}
+
+.SOCIAL-ICONS5:hover{
+  opacity: .7;
+  transition:  0.3s ease;
+}
+
+.SOCIAL-ICONS6:hover{
+  opacity: .7;
+  transition:  0.3s ease;
+}
+
+.SOCIAL-ICONS7:hover{
+  opacity: .7;
+  transition:  0.3s ease;
+}

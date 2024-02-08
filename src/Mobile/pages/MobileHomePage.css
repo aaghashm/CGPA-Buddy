@@ -1,0 +1,20 @@
+.mobile-home-page1,
+.mobile-logo-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.mobile-logo-frame {
+  align-self: stretch;
+  gap: 50px;
+  max-width: 100%;
+}
+.mobile-home-page1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  gap: 50px;
+  letter-spacing: normal;
+}

@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <Header titleWord1="EASY" titleWord2="CGPA" titleWord3="CALCULATOR" image='HomePage img.png'/>
-      <QuickCalculate />
+     <QuickCalculate />
       <Analyze />
       <Footer />
     </div>

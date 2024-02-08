@@ -178,7 +178,7 @@
   justify-content: flex-start;
   padding: var(--padding-6xs) var(--padding-lg) var(--padding-7xs);
   box-sizing: border-box;
-  gap: var(--gap-151xl);
+  gap: 0;
   z-index: 1;
 }
 .subject-item {

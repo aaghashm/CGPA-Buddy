@@ -5,7 +5,6 @@ import "./Header.css";
 const Header = ({ titleWord1, titleWord2, titleWord3, image }) => {
   return (
     <section className="header">
-      <div className="menu-items" />
       <header className="logo-container">
         <div className="menu-items1">
         <Link to="/"> 

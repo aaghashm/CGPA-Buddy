@@ -1,53 +1,34 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import QuickCGPACalculator from "./pages/QuickCGPACalculator";
 import HomePage from "./pages/HomePage";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import MobileHomePage from "./Mobile/pages/MobileHomePage";
 
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
+  // State to track whether the screen size is mobile or not
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 798); // Adjust the screen width threshold as needed
+    };
 
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
+    handleResize(); // Call once to set the initial state
+    window.addEventListener('resize', handleResize);
 
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      {/* Conditionally render the appropriate component based on screen size */}
+      <Route
+        path="/"
+        element={isMobile ? <MobileHomePage /> : <HomePage />}
+      />
       <Route path="/QuickCalculate" element={<QuickCGPACalculator />} />
       <Route path="/Comingsoon" element={<ComingSoonPage />} />
     </Routes>

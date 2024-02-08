@@ -153,32 +153,3 @@
   opacity: .7;
   transition:  0.3s ease;
 }
-@media screen and (max-width: 1050px) {
-  .footer-titlr {
-    font-size: var(--font-size-32xl);
-    line-height: 51px;
-  }
-  .footer-top {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 750px) {
-  .footer-bottom {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 450px) {
-  .footer-titlr {
-    font-size: var(--font-size-19xl);
-    line-height: 38px;
-  }
-  .mailidf,
-  .ppf,
-  .terms-conditions {
-    font-size: var(--font-size-lgi);
-    line-height: 33px;
-  }
-  .pp-and-tc {
-    flex-wrap: wrap;
-  }
-}

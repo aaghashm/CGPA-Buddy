@@ -166,52 +166,5 @@
   font-size: var(--font-size-45xl);
   color: var(--color-darkslategray);
   font-family: var(--menu);
-}
-@media screen and (max-width: 1050px) {
-  .image-qc {
-    flex: 1;
-  }
-  .quick-calculate-cgpa {
-    font-size: var(--font-size-32xl);
-    line-height: 51px;
-  }
-  .qcb-body {
-    font-size: var(--font-size-19xl);
-    line-height: 38px;
-  }
-  .arrow-vector {
-    flex: 1;
-  }
-  .quick-calculate {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 750px) {
-  .quick-calculate-content {
-    padding-bottom: var(--padding-102xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .image-qc {
-    min-width: 100%;
-  }
-  .quick-calculate-cgpa {
-    font-size: var(--font-size-19xl);
-    line-height: 38px;
-  }
-  .qc-body {
-    font-size: var(--font-size-lgi);
-    line-height: 33px;
-  }
-  .qcb-body {
-    font-size: var(--font-size-10xl);
-    line-height: 29px;
-  }
-  .calculate-now-button1 {
-    flex-wrap: wrap;
-  }
-  .arrow-vector {
-    min-width: 100%;
-  }
+  
 }

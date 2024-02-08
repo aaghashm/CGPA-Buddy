@@ -18,7 +18,7 @@
 .logo-title {
   margin: 0;
   position: relative;
-  font-size: inherit;
+  font-size: 16;
   line-height: 100%;
   font-weight: 700;
   font-family: inherit;
@@ -282,34 +282,172 @@
   color: var(--color-darkslategray);
   font-family: var(--menu);
 }
-@media screen and (max-width: 1200px) {
-  .header {
-    gap: var(--gap-148xl);
-  }
-}
-@media screen and (max-width: 1050px) {
-  .calculate-now-button {
-    display: none;
-  }
-  .easy-cgpa-calculator-container {
-    font-size: var(--font-size-32xl);
-    line-height: 77px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .header {
-    gap: var(--gap-148xl);
-    padding-top: var(--padding-26xl);
-    padding-bottom: var(--padding-40xl);
+/* Adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+  .logo-container {
+    width: 100%; /* Adjust width for smaller screens */
+    padding: 0 20px; /* Add padding for smaller screens */
     box-sizing: border-box;
   }
+  
+  .quick-calc-frame {
+    width: 100%; /* Adjust width for smaller screens */
+    gap: 10px; /* Adjust gap for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  .image-1-1 {
+    display: none; /* Hide the image for smaller screens */
+  }
 }
-@media screen and (max-width: 450px) {
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .header-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-lavender);
+  }
+  .aaghash-logo-light-theme-1 {
+    height: 20px;
+    width: 21px;
+    position: relative;
+    object-fit: cover;
+  }
+  .logo-title {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-10xs);
+  }
+  .about,
+  .contact,
+  .home {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .home-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .profile-icon {
+    width: 22px;
+    height: 19px;
+    position: relative;
+    object-fit: cover;
+  }
+  .footer-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-3xs);
+  }
+  .frame-group,
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .frame-group {
+    height: 56px;
+    width: 233px;
+    justify-content: flex-end;
+    padding: 0 0 0 var(--padding-11xl);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: var(--menu-phone-size);
+    color: var(--color-darkslategray);
+    font-family: var(--menu);
+  }
+  .menu-items {
+    width: 146px;
+    height: 40.5px;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .image-1-13 {
+    width: 250px;
+    flex: 1;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .cgpa {
+    color: var(--color-mediumseagreen);
+  }
   .easy-cgpa-calculator-container {
-    font-size: var(--font-size-13xl);
-    line-height: 51px;
+    margin: 0;
+    align-self: stretch;
+    height: 133px;
+    position: relative;
+    font-size: inherit;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .header,
+  .image-1-1-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .image-1-1-parent {
+    flex: 1;
+    gap: var(--gap-16xl);
+    z-index: 1;
+    font-size: var(--font-size-45xl);
   }
   .header {
-    gap: var(--gap-148xl);
+    height: 478px;
+    padding: var(--padding-13xl) var(--padding-33xl) var(--padding-xs)
+      var(--padding-6xl);
+    box-sizing: border-box;
+    position: relative;
+    gap: var(--gap-9xl);
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--color-darkslategray);
+    font-family: var(--menu);
   }
+  @media screen and (max-width: 450px) {
+    .image-1-1-parent {
+      gap: var(--gap-16xl);
+    }
+    .header {
+      padding-top: var(--padding-2xl);
+      padding-bottom: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  
+  /* Add any additional adjustments needed for mobile screens */
 }
