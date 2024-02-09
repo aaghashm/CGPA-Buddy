@@ -3,12 +3,15 @@ import { Select } from "@chakra-ui/react";
 import HEADERMOB from "../components/HeaderMob";
 import FOOTERFRAME from "../components/FooterFrame";
 import "./QuickCGPAMob.css";
+import CustomAlert from "../../components/CustomAlert";
 
 const QuickCGPAMob = () => {
   const [semester, setSemester] = useState("1");
   const [department, setDepartment] = useState("CSE & ALLIED BRANCHES");
   const [grades, setGrades] = useState({});
-  
+  const [alertIsOpen, setAlertIsOpen] = useState(false); // State for controlling CustomAlert
+  const [alertHeader, setAlertHeader] = useState(""); // State for alert header
+  const [alertText, setAlertText] = useState(""); 
   // Define subjects, credits, and departments
   const departments = {
     "CSE & ALLIED BRANCHES": {
@@ -170,7 +173,15 @@ const QuickCGPAMob = () => {
       [subject]: grade
     }));
   };
+  const openAlert = (header, text) => {
+    setAlertHeader(header);
+    setAlertText(text);
+    setAlertIsOpen(true);
+  };
 
+  const closeAlert = () => {
+    setAlertIsOpen(false);
+  };
   const calculateCGPA = () => {
     event.preventDefault();
     const subjects = departments[department].semesters[semester];
@@ -184,7 +195,7 @@ const QuickCGPAMob = () => {
   
       if (grade === undefined || grade === -1) {
         console.error(`Grade for ${subject} not provided.`);
-        window.alert(`Please choose a grade for ${subject}.`);
+        openAlert("OOPS!",`Please choose a grade for ${subject}.`);
         return;
       }
   
@@ -198,7 +209,7 @@ const QuickCGPAMob = () => {
     }
   
     if (totalCredits === 0) {
-      window.alert("No subjects found for calculation.");
+      openAlert("OOPS!","No subjects found for calculation.");
       return;
     }
   
@@ -211,7 +222,7 @@ const QuickCGPAMob = () => {
       alertMessage += `Arrear Subject Names: ${failedSubjects.join(", ")}\n`;
     }
   
-    window.alert(alertMessage);
+    openAlert("Here you go!", alertMessage);
   };
   
 
@@ -223,7 +234,7 @@ const QuickCGPAMob = () => {
         word3="CALCULATOR"
         image="Quick Calculate.png"
       />
-
+ <CustomAlert isOpen={alertIsOpen} onClose={() => setAlertIsOpen(false)} header={alertHeader} alertText={alertText} />
         <div className="depsem">
        <div className="department-selection-frame">
           <h3 className="semester">Semester</h3>
@@ -290,7 +301,7 @@ const QuickCGPAMob = () => {
                                                     <option value={6}>6 (B)</option>
                                                     <option value={5}>5 (C+)</option>
                                                     <option value={4}>4 (C)</option>
-                                                    <option value={999}>0 (U)</option>
+                                                    <option value={999}>0 (U) --Arrear</option>
                                                 </Select>
                                                 
                                                 </div>

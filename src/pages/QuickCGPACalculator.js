@@ -3,12 +3,15 @@ import { Select } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./QuickCGPACalculator.css";
+import CustomAlert from "../components/CustomAlert";
 
 const QuickCGPACalculator = () => {
   const [semester, setSemester] = useState("1");
   const [department, setDepartment] = useState("CSE & ALLIED BRANCHES");
   const [grades, setGrades] = useState({});
-  
+  const [alertIsOpen, setAlertIsOpen] = useState(false); // State for controlling CustomAlert
+  const [alertHeader, setAlertHeader] = useState(""); // State for alert header
+  const [alertText, setAlertText] = useState(""); 
   // Define subjects, credits, and departments
   const departments = {
     "CSE & ALLIED BRANCHES": {
@@ -170,7 +173,15 @@ const QuickCGPACalculator = () => {
       [subject]: grade
     }));
   };
+  const openAlert = (header, text) => {
+    setAlertHeader(header);
+    setAlertText(text);
+    setAlertIsOpen(true);
+  };
 
+  const closeAlert = () => {
+    setAlertIsOpen(false);
+  };
   const calculateCGPA = () => {
     const subjects = departments[department].semesters[semester];
     let totalCredits = 0;
@@ -183,7 +194,7 @@ const QuickCGPACalculator = () => {
   
       if (grade === undefined || grade === -1) {
         console.error(`Grade for ${subject} not provided.`);
-        window.alert(`Please choose a grade for ${subject}.`);
+        openAlert("OOPS!",`Please choose a grade for ${subject}.`);
         return;
       }
   
@@ -197,7 +208,7 @@ const QuickCGPACalculator = () => {
     }
   
     if (totalCredits === 0) {
-      window.alert("No subjects found for calculation.");
+      openAlert("OOPS!","No subjects found for calculation.");
       return;
     }
   
@@ -207,14 +218,15 @@ const QuickCGPACalculator = () => {
     
     if (failedCount > 0) {
       alertMessage += `No of Arrears: ${failedCount}\n`;
-      alertMessage += `Arrear Subject Names: ${failedSubjects.join(", ")}\n`;
+      alertMessage += `Arrear Subject Names:\n ${failedSubjects.join(",\n ")}\n`;
     }
   
-    window.alert(alertMessage);
+    openAlert("Here you go!", alertMessage);
   };
   
 
   return (
+
     <div className="quick-cgpa-calculator">
       <Header
         titleWord1="QUICK"
@@ -222,6 +234,7 @@ const QuickCGPACalculator = () => {
         titleWord3="CALCULATOR"
         image="Quick Calculate.png"
       />
+       <CustomAlert isOpen={alertIsOpen} onClose={() => setAlertIsOpen(false)} header={alertHeader} alertText={alertText} />
       <div className="semester-selection-frame">
         <div className="department-selection-frame">
           <h3 className="semester">Semester</h3>
@@ -289,7 +302,7 @@ const QuickCGPACalculator = () => {
                 <option value={6}>6 (B)</option>
                 <option value={5}>5 (C+)</option>
                 <option value={4}>4 (C)</option>
-                <option value={999}>0 (U)</option>
+                <option value={999}>0 (U) -- Arrear</option>
               </Select>
             </div>
           </div>
