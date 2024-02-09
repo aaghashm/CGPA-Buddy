@@ -166,6 +166,10 @@
   z-index: 1;
  text-overflow: ellipsis;
  white-space: wrap;
+ width: 500px;
+}
+.chakra-select__icon-wrapper emotion-cache-iohxn1{
+  visibility: hidden;
 }
 .department-selection-frame{
   gap: 43px;
@@ -173,56 +177,57 @@
 .group-select {
   position: relative;
   font-size: 10px;
-  color: var(--color-black);
-  z-index: 1;
-  width: 60%;
-  background-color: var(--color-whitesmoke); /* Change the background color to your desired shade */
+  color: var(--color-black); /* Change the background color to your desired shade */
   text-align: center; /* Center-align the text */
   padding: .2px;
   border: 1px solid rgb(155, 171, 173);
-  appearance: none; /* Remove default dropdown arrow */
-  /* Add custom dropdown arrow */
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 24px; 
-  height: 60%;
-   align-self: flex-end;
+  align-self: center;
   justify-content: flex-end;
+  width:100px;
+  white-space: nowrap;
+  top: -12px;
+  height: 25px;
 }
+
 .subject,
 .subject-item {
   width: 100%;
   border-radius: var(--br-3xs);
   background-color: var(--color-lightgray);
 }
-.group-select-container{
-    width:100%;
-}
 .subject {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   padding-left: 10px;
   box-sizing: border-box;
   gap: 0;
   z-index: 1;
   height: 100%;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  align-items: center;
+}
+
+.group-select-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items:center; /* Vertically center items */
+  width: 100%; /* Ensure the container takes full width */
+  bottom: 10%;
+}
+
+.group-select-container .chakra-select__icon {
+  position: absolute;
+  top: 35%;
+  left: 9px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+.group-select-container .chakra-select__menu {
+  text-align: center;
+}
 
 
 
@@ -290,8 +295,6 @@
   padding: var(--padding-2xl) var(--padding-2xl) 50px;
   gap: 40px;
 }
-}
-
 .QCB-BODY {
     position: relative;
     font-size: 16px; /* Replaced with specific font size */
@@ -336,3 +339,8 @@
     opacity: .9;
     transition: transform 0.3s ease;
   }
+
+
+
+}
+

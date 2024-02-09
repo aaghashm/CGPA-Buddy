@@ -273,7 +273,8 @@ const QuickCGPAMob = () => {
                                                 <div className="group-select-container">
                                                 <Select
                                                     className="group-select"
-                                                    w="179px" 
+                                                    w="100px" 
+                                                    backgroundColor="#F2F4F7"
                                                     onChange={(e) => handleGradeChange(subjectData.subject, parseInt(e.target.value))}
                                                     required
                                                     value={grades[subjectData.subject] || -1} 

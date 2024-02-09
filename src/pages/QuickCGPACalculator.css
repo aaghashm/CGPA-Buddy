@@ -135,8 +135,9 @@
   font-family: var(--menu);
   color: var(--color-black);
   text-align: left;
-  white-space: nowrap;
+  white-space: wrap;
   z-index: 1;
+  width: 400%;
 }
 
 .group-select {
@@ -144,27 +145,31 @@
   width: 179px;
   font-size: 23px;
   color: var(--color-black);
-  z-index: 1;
   width: 179px;
-  background-color: var(--color-whitesmoke); /* Change the background color to your desired shade */
   text-align: center; /* Center-align the text */
   padding: .2px;
   border: 1px solid rgb(155, 171, 173);
   appearance: none; /* Remove default dropdown arrow */
-  /* Add custom dropdown arrow */
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
-  background-repeat: no-repeat;
-  background-position: right 8px center;
   padding-right: 24px; 
+  white-space: nowrap;
+  top: -9px;
+  height: 38px;
 }
-
+.group-select-container .chakra-select__icon {
+  position: absolute;
+  top: 30%;
+}
 .group-select-container {
   display: flex;
   justify-content: flex-end; /* Align items to the right */
   align-items: center; /* Vertically center items */
   width: 100%; /* Ensure the container takes full width */
+  bottom: 10%;
 }
-
+.chakra-select__icon {
+  position: absolute;
+  top: 40%;
+}
 .subject,
 .subject-item {
   width: 976px;
@@ -176,7 +181,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-6xs) var(--padding-lg) var(--padding-7xs);
+  padding: 0px var(--padding-lg) 0px;
   box-sizing: border-box;
   gap: 0;
   z-index: 1;

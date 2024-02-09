@@ -271,8 +271,10 @@ const QuickCGPACalculator = () => {
             <div className="subname">{subjectData.subject}</div>
             <div className="group-select-container">
               <Select
+              iconSize={28}
                 className="group-select"
                 w="179px"
+                backgroundColor="#F2F4F7"
                 onChange={(e) => handleGradeChange(subjectData.subject, parseInt(e.target.value))}
                 required
                 value={grades[subjectData.subject] || -1}
