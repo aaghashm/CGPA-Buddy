@@ -87,14 +87,14 @@ const QuickCGPAMob = () => {
           { subject: "Heritage of Tamils", credit: 3 }*/
         ],
         "2": [
-         /* { subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting", credit: 3 },
-          { subject: "Applied Linear Algebra", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1 },
+          { subject: "Probability and Numerical Methods", credit: 4 },
+          { subject: "Workshop and Manufacturing Practices", credit: 2 },
+          { subject: "Physical Sciences", credit: 4},
+          { subject: "Physical Sciences Laboratory", credit: 1.5 },
           { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "RDBMS", credit: 3 },
+          { subject: "RDBMS", credit: 4 },
           { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 3 }*/
+          { subject: "Heritage of Tamils", credit: 1 }
         ],
         "3":[],
         // Define other semesters here
