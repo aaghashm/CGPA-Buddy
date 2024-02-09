@@ -172,6 +172,7 @@ const QuickCGPAMob = () => {
   };
 
   const calculateCGPA = () => {
+    event.preventDefault();
     const subjects = departments[department].semesters[semester];
     let totalCredits = 0;
     let totalGradePoints = 0;
