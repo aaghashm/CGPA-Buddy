@@ -186,6 +186,11 @@
   gap: 0;
   z-index: 1;
 }
+.subname:hover{
+  color: #0B87AC;
+  transition:  0.3s ease;
+  cursor: pointer;
+}
 .subject-item {
   height: 61px;
   position: relative;
@@ -259,4 +264,7 @@
   align-items: center;
   padding: var(--padding-2xl) var(--padding-2xl) var(--padding-58xl);
   gap: var(--gap-74xl);
+}
+.quick-cgpa-calculator{
+  cursor: default;
 }

@@ -1,14 +1,12 @@
 import React from "react";
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Text, Flex } from "@chakra-ui/react";
 
-
 const CustomAlert = ({ isOpen, onClose, header, alertText }) => {
-  // Function to render bold text with specified color
-// Function to render bold text with specified color and optional font size
-const renderBoldText = (text, color, fontSize) => {
+  // Function to render bold text with specified color and optional font size
+  const renderBoldText = (text, color, fontSize) => {
     return <Text as="span" fontWeight="bold" color={color} fontSize={fontSize}>{text}</Text>;
   };
-  
+
   // Function to format the alert message with specified styles
   const formatAlertText = () => {
     // Split the alertText by newline characters
@@ -37,9 +35,6 @@ const renderBoldText = (text, color, fontSize) => {
       return <Text key={index}>{line}</Text>;
     });
   };
-  
-
-
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="sm">
@@ -49,13 +44,27 @@ const renderBoldText = (text, color, fontSize) => {
         <ModalBody>
           {formatAlertText()}
         </ModalBody>
-        <ModalFooter justifyContent="center" alignItems="center">
-  <Button colorScheme="green" onClick={onClose}>OK</Button>
-</ModalFooter>
-
+        <ModalFooter justifyContent="center">
+          <Flex justify="center" align="center" w="100%">
+          <Button colorScheme="green" mr="10px" w ="25%" onClick={onClose}>OK</Button>
+            <Button colorScheme="gray" mr="10px" onClick={() => copyToClipboard(alertText)}>Copy</Button>
+            
+          </Flex>
+        </ModalFooter>
       </ModalContent>
     </Modal>
   );
 };
 
 export default CustomAlert;
+
+// Function to copy text to clipboard
+const copyToClipboard = (text) => {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log("Text copied to clipboard");
+    })
+    .catch((error) => {
+      console.error("Error copying text to clipboard: ", error);
+    });
+};

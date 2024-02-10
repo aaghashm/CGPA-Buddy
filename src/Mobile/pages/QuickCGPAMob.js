@@ -12,6 +12,7 @@ const QuickCGPAMob = () => {
   const [alertIsOpen, setAlertIsOpen] = useState(false); // State for controlling CustomAlert
   const [alertHeader, setAlertHeader] = useState(""); // State for alert header
   const [alertText, setAlertText] = useState(""); 
+  const [selectedSubject, setSelectedSubject] = useState(null);
   // Define subjects, credits, and departments
   const departments = {
     "CSE & ALLIED BRANCHES": {
@@ -38,40 +39,37 @@ const QuickCGPAMob = () => {
         ],
         
         "3": [
-         /* { subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting Laboratory", credit: 1.5 },
-          { subject: "Applied Linear Algebra", credit: 4 },
-          { subject: "Technical English", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1.5 },
-          { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "Managing Data using RDBMS", credit: 4 },
-          { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 1 }
-       */ ],
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Operating Systems", credit: 4 },
+          { subject: "Probability and Statistics", credit: 4 },
+          { subject: "Design and Analysis of Algorithms", credit: 3 },
+          { subject: "Advanced Java Programming", credit: 3 },
+          { subject: "Front End Development using React", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 }
+       ],
         // Define other semesters here
       }
     },
     ECE: {
       semesters: {
         "1": [
-      /*    { subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting", credit: 3 },
-          { subject: "Applied Linear Algebra", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1 },
-          { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "RDBMS", credit: 3 },
-          { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 3 }*/
+         { subject: "Technical English", credit: 3 },
+          { subject: "Linear Algebra and Calculus", credit: 4 },
+          { subject: "Spoken English Laboratory", credit: 1.5 },
+          { subject: "Workshop and Manufacturing Practices Laboratory", credit: 1.5 },
+          { subject: "Agile Product Development and Developer Tools", credit: 3 },
+          { subject: "Programming for Problem Solving", credit: 4 },
+          { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
         ],
         "2": [
-       /*   { subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting", credit: 3 },
-          { subject: "Applied Linear Algebra", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1 },
-          { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "RDBMS", credit: 3 },
+        { subject: "Circuit Theory and Electronic Devices", credit: 3 },
+          { subject: "Statistics and Complex Analysis", credit: 4 },
+          { subject: "Physical Sciences", credit: 4 },
+          { subject: "Physical Sciences Laboratory", credit: 1.5 },
+          { subject: "Circuit Theory Laboratory", credit: 1.5 },
+          { subject: "Managing Data using RDBMS", credit: 4 },
           { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 3 }*/
+          { subject: "Data Structures and Algorithms", credit: 4 }
         ],
         "3":[],
         // Define other semesters here
@@ -80,15 +78,14 @@ const QuickCGPAMob = () => {
     EEE: {
       semesters: {
         "1": [
-        /*  { subject: "Computer Organisation and Architecture", credit: 3 },
-          { subject: "PC Hardware and Trouble Shooting", credit: 3 },
-          { subject: "Applied Linear Algebra", credit: 3 },
-          { subject: "Spoken English Laboratory", credit: 1 },
-          { subject: "Data Structures and Algorithms", credit: 4 },
-          { subject: "RDBMS", credit: 3 },
-          { subject: "Java Fundamentals", credit: 3 },
-          { subject: "Heritage of Tamils", credit: 3 }*/
-        ],
+          { subject: "Technical English", credit: 3 },
+           { subject: "Transform Calculus", credit: 4 },
+           { subject: "Spoken English Laboratory", credit: 1.5 },
+           { subject: "Engineering Graphics Laboratory", credit: 1.5 },
+           { subject: "Agile Product Development and Developer Tools", credit: 3 },
+           { subject: "Programming for Problem Solving", credit: 4 },
+           { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
+         ],
         "2": [
           { subject: "Probability and Numerical Methods", credit: 4 },
           { subject: "Workshop and Manufacturing Practices", credit: 2 },
@@ -99,8 +96,18 @@ const QuickCGPAMob = () => {
           { subject: "Java Fundamentals", credit: 3 },
           { subject: "Heritage of Tamils", credit: 1 }
         ],
-        "3":[],
+        /*
+        "3":[
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Electromagnetic Fields", credit: 4 },
+          { subject: "Circuits and Devices", credit: 4},
+          { subject: "DC Machines and Transformers", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 },
+          { subject: "Circuits and Devices Laboratory", credit: 1.5 },
+          { subject: "DC Machines and Transformers Laboratory", credit: 1.5 },
+        ],
         // Define other semesters here
+        */
       }
     },
     MECHANICAL: {
@@ -156,6 +163,13 @@ const QuickCGPAMob = () => {
 
   const handleSemesterChange = (e) => {
     setSemester(e.target.value);
+  };
+
+  const handleClickSubject = (subjectData) => {
+    setSelectedSubject(subjectData);
+    // Construct alert message
+    const alertMessage = `Name: ${subjectData.subject}\nCredits: ${subjectData.credit}\nDepartment: ${department}\nSemester: ${semester}`;
+    openAlert("Subject Details", alertMessage);
   };
 
   const handleDepartmentChange = (e) => {
@@ -279,9 +293,10 @@ const QuickCGPAMob = () => {
       <div className="subjects-list">
         <b className="form-title">Enter Grades for Respective Subjects</b>
         {departments[department].semesters[semester].map((subjectData, index) => (
-          <div key={index} className="subject">
+                    <div key={index} className={`subject ${selectedSubject === subjectData ? 'selected' : ''}`} >
+
             <div className="subject-item" />
-                        <div className="subname">{subjectData.subject}</div>
+                        <div className="subname" onClick={() => handleClickSubject(subjectData)}>{subjectData.subject}</div>
                                                 <div className="group-select-container">
                                                 <Select
                                                     className="group-select"
