@@ -5,29 +5,6 @@ import { Link } from 'react-router-dom';
 const HEADERMOB = ({ image, word1, word2, word3 }) => {
   return (
     <section className="HEADER">
-      <div className="HEADER-CHILD" />
-      <div className='Topstyle'>
-      <div className="PAGE-TITLE">
-          <div className="EASY-CGPA-CALCULATOR-WRAPPER">
-            <h1 className="EASY-CGPA-CALCULATOR-CONTAINER">
-              <div>
-                <span className="ES1">{word1}</span>
-                <span className="SPLW">{word2}</span>
-              </div>
-              <span className="ES1">{word3}</span>
-            </h1>
-          </div>
-        </div>
-      <div className="IMAGE-1-1-WRAPPER">
-        <img
-          className="IMAGE-1-1"
-          loading="eager"
-          alt=""
-          src={image}
-        />
-      </div>
-      
-        </div>
       <div className="MENU-ITEMS-PARENT">
         <div className="MENU-ITEMS">
           <Link to={"/"} className="LOGO">
@@ -57,6 +34,29 @@ const HEADERMOB = ({ image, word1, word2, word3 }) => {
             </Link>
           </header>
         </div>
+      <div className="HEADER-CHILD" />
+      <div className='Topstyle'>
+      <div className="PAGE-TITLE">
+          <div className="EASY-CGPA-CALCULATOR-WRAPPER">
+            <h1 className="EASY-CGPA-CALCULATOR-CONTAINER">
+              <div>
+                <span className="ES1">{word1}</span>
+                <span className="SPLW">{word2}</span>
+              </div>
+              <span className="ES1">{word3}</span>
+            </h1>
+          </div>
+        </div>
+      <div className="IMAGE-1-1-WRAPPER">
+        <img
+          className="IMAGE-1-1"
+          loading="eager"
+          alt=""
+          src={image}
+        />
+      </div> 
+        </div>
+      
         
       </div>
     </section>

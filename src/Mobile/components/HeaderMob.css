@@ -1,23 +1,23 @@
 .HEADER-CHILD {
   height: 100%;
   width: 100%;
-  position: absolute;
   margin: 0 !important;
   top: 0;
   bottom: 0;
   left: calc(50% - 208px);
   background-color: #e0eaff; /* Replaced with color value */
   z-index: unset;
+  align-items: flex-start;
 }
 .IMAGE-1-1 {
   align-self: stretch;
   flex: 1;
   position: relative;
-  width: 180px;
-  overflow: hidden;
+  width: 50%;
   height: 200px;
   object-fit:fill;
   max-height: 150px;
+  padding-right: 10px;
 }
 .SPLW {
   color: #12b76a; /* Replaced with color value */
@@ -119,13 +119,14 @@
 }
 .FRAME-PARENT {
   height: 56px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: left;
   font-size: 14px; /* Replaced with font size */
   color: #344054; /* Replaced with color value */
   font-family: "Saira Condensed"; /* Replaced with font family */
   z-index: 1;
-  max-width: 100%;
+  max-width: 90%;
+  padding-right: 10px;
 }
 .PROFILE-ICON:hover {
   opacity: 0.8;
@@ -134,7 +135,7 @@
   align-self: stretch;
   height: 40px;
   justify-content: flex-start;
-  gap: 100px; /* Replaced with gap value */
+  gap: 23%; /* Replaced with gap value */
   z-index: 1;
   width: 100%;
 }
@@ -175,7 +176,7 @@
 .Topstyle{
   display: flex;
   flex-direction: row;
-  margin-top: 20%;
+  margin-top: 7%;
   padding: 0;
   align-items: flex-end;
 }
@@ -189,8 +190,7 @@
 }
 .MENU-ITEMS-PARENT {
   flex-direction: column;
-  gap: 289px; /* Replaced with gap value */
-  margin-left: -526px;
+  padding-right: 10px;
 }
 .HEADER {
   align-self: stretch;
@@ -203,8 +203,24 @@
   color: #344054; /* Replaced with color value */
   font-family: "Saira Condensed"; /* Replaced with font family */
 }
-@media screen and (max-width: 450px) {
-  .MENU-ITEMS-PARENT {
-    gap: 278px; /* Replaced with gap value */
+
+@media (max-width: 375px) {
+  .LOGO-TITLE {
+    display: none;
+  }
+  .LOGO {
+    display: none;
+  }
+  .MENU-ITEMS {
+    align-self: stretch;
+    height: 40px;
+    justify-content: flex-start;
+    gap: 0; /* Replaced with gap value */
+    z-index: 1;
+    width: 100%;
+  }
+  .Topstyle{
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

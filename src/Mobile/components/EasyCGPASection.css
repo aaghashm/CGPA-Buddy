@@ -107,15 +107,6 @@ body {
   position: relative;
 }
 
-.MARK-CALCULATION-REMOVEBG-PREV-ICON {
-  width: 165px;
-  height: 141px;
-  position: absolute;
-  margin: 0 !important;
-  right: -122px;
-  object-fit:contain;
-}
-
 .CALCULATE-NOW-BUTTON1 {
   border-radius: 10px; /* Replaced with specific border radius */
   background-color: #12b76a; /* Replaced with specific color value */
@@ -236,4 +227,11 @@ body {
   transform: scale(1.03);
   opacity: .9;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 375px) {
+.MARK-CALCULATION-REMOVEBG-PREV-ICON,
+.MARK-CALCULATION-REMOVEBG-PREV-ICON1{
+  display: none;
+}
 }

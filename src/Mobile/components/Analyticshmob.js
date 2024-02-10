@@ -42,7 +42,7 @@ const ANALYTICSHMOB = () => {
         </div>
         <div className="IMAGE-QC1">
           <img
-            className="MARK-CALCULATION-REMOVEBG-PREV-ICON"
+            className="MARK-CALCULATION-REMOVEBG-PREV-ICON1"
             loading="eager"
             alt=""
             src="/Analyze now.png"

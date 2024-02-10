@@ -8,6 +8,7 @@
   font-weight: 700;
   font-family: inherit;
   align-items: center;
+  height: 90%;
 }
 .select-semester {
   flex: 1;
@@ -351,4 +352,8 @@ width: 200%;
 
 
 }
-
+@media (max-width: 375px) {
+  .select-department{
+    font-size: 10px;
+  }
+}
