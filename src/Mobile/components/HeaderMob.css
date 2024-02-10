@@ -13,23 +13,22 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  max-width: 80%;
+  width: 180px;
   overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  height: 200px;
+  object-fit:fill;
+  max-height: 150px;
 }
 .SPLW {
   color: #12b76a; /* Replaced with color value */
 }
 .IMAGE-1-1-WRAPPER {
-  height: 308px;
+  height: fit-content;
   width: 327px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 63px 0 0; /* Replaced with padding value */
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -120,12 +119,13 @@
 }
 .FRAME-PARENT {
   height: 56px;
-  width: 200%;
   justify-content: flex-end;
   text-align: left;
   font-size: 14px; /* Replaced with font size */
   color: #344054; /* Replaced with color value */
   font-family: "Saira Condensed"; /* Replaced with font family */
+  z-index: 1;
+  max-width: 100%;
 }
 .PROFILE-ICON:hover {
   opacity: 0.8;
@@ -134,14 +134,14 @@
   align-self: stretch;
   height: 40px;
   justify-content: flex-start;
-  gap: 20px; /* Replaced with gap value */
+  gap: 100px; /* Replaced with gap value */
   z-index: 1;
-  width: 110%;
+  width: 100%;
 }
 .EASY-CGPA-CALCULATOR-CONTAINER {
   margin: 0;
   align-self: stretch;
-  height: 128px;
+  height: fit-content;
   position: relative;
   font-size: inherit;
   line-height: 100%;
@@ -150,37 +150,47 @@
   display: inline-block;
   z-index: 1;
   width: fit-content;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .EASY-CGPA-CALCULATOR-WRAPPER {
-  width: 309px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: baseline;
   padding: 0;
   box-sizing: border-box;
 }
 .PAGE-TITLE {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  padding: 10px 20px 10px 0; /* Replaced with padding value */
+  padding-bottom: 0; /* Replaced with padding value */
   z-index: 1;
+  width:fit-content;
+  height: fit-content;
+}
+.Topstyle{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+  padding: 0;
+  align-items: flex-end;
 }
 .HEADER,
 .MENU-ITEMS-PARENT {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 100%;
+  width: 100%;
   background-color: #e0eaff; /* Replaced with color value */
 }
 .MENU-ITEMS-PARENT {
-  width: 335px;
   flex-direction: column;
-  gap: 278px; /* Replaced with gap value */
-  margin-left: -327px;
+  gap: 289px; /* Replaced with gap value */
+  margin-left: -526px;
 }
 .HEADER {
   align-self: stretch;
@@ -189,7 +199,7 @@
   box-sizing: border-box;
   position: relative;
   text-align: left;
-  font-size: 64px; /* Replaced with font size */
+  font-size: 43px; /* Replaced with font size */
   color: #344054; /* Replaced with color value */
   font-family: "Saira Condensed"; /* Replaced with font family */
 }

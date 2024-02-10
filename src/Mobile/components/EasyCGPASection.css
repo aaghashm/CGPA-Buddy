@@ -11,7 +11,7 @@ body {
   height: 141px;
   position: absolute;
   margin: 0 !important;
-  right: -107px;
+  right: -98px;
   object-fit:contain;
 }
 
@@ -107,6 +107,15 @@ body {
   position: relative;
 }
 
+.MARK-CALCULATION-REMOVEBG-PREV-ICON {
+  width: 165px;
+  height: 141px;
+  position: absolute;
+  margin: 0 !important;
+  right: -122px;
+  object-fit:contain;
+}
+
 .CALCULATE-NOW-BUTTON1 {
   border-radius: 10px; /* Replaced with specific border radius */
   background-color: #12b76a; /* Replaced with specific color value */
@@ -137,6 +146,7 @@ body {
 }
 
 .IMAGE-Q-C-PARENT {
+  padding-left: 10px;
   align-self: stretch;
   gap: 12px; /* Replaced with specific gap value */
 }

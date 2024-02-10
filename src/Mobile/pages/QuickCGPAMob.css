@@ -40,16 +40,7 @@
   font-weight: 700;
   font-family: inherit;
 }
-.depsem{
-    width: 382px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  max-width: 100%;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
+
 .select-department {
   font-size: 17px;
   color: var(--color-black);
@@ -125,6 +116,7 @@
   align-items: center; /* Align items vertically */
   justify-content: flex-start; /* Add space between items */
   width: 50%;
+  gap: 30px;
 }
 .form-container {
   width: 100%;
@@ -173,9 +165,6 @@ width: 200%;
 }
 .chakra-select__icon-wrapper emotion-cache-iohxn1{
   visibility: hidden;
-}
-.department-selection-frame{
-  gap: 43px;
 }
 .group-select {
   position: relative;
@@ -292,12 +281,28 @@ width: 200%;
   margin: 0;
   width: 100%;
   border-radius: var(--br-11xl);
-  background-color: var(--color-whitesmoke);
+  background-color: aliceblue;
   flex-direction: column;
   align-items: center;
   padding: var(--padding-2xl) var(--padding-2xl) 50px;
   gap: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+.depsem{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
 .QCB-BODY {
     position: relative;
     font-size: 16px; /* Replaced with specific font size */

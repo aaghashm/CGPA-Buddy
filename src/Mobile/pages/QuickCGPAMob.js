@@ -249,6 +249,9 @@ const QuickCGPAMob = () => {
         image="Quick Calculate.png"
       />
  <CustomAlert isOpen={alertIsOpen} onClose={() => setAlertIsOpen(false)} header={alertHeader} alertText={alertText} />
+
+      <div className="quick-cgpa-calculator" style={{gap:"0px",paddingBottom:"10px",backgroundColor:"#f2f4f7"}}>
+
         <div className="depsem">
        <div className="department-selection-frame">
           <h3 className="semester">Semester</h3>
@@ -337,8 +340,8 @@ const QuickCGPAMob = () => {
           </button>
     </form>
   )}
-</section>
-
+      </section>
+          </div>
 
       <FOOTERFRAME />
     </div>
