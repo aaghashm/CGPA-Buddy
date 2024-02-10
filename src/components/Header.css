@@ -281,6 +281,7 @@
   font-size: var(--font-size-109xl);
   color: var(--color-darkslategray);
   font-family: var(--menu);
+  background-color: var(--color-lavender);
 }
 /* Adjustments for smaller screens */
 @media screen and (max-width: 1024px) {
