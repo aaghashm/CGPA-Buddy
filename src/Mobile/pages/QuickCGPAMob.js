@@ -296,7 +296,8 @@ const QuickCGPAMob = () => {
                     <div key={index} className={`subject ${selectedSubject === subjectData ? 'selected' : ''}`} >
 
             <div className="subject-item" />
-                        <div className="subname" onClick={() => handleClickSubject(subjectData)}>{subjectData.subject}</div>
+            <div className="subcover">
+                        <div className="subname" onClick={() => handleClickSubject(subjectData)}>{subjectData.subject}</div></div>
                                                 <div className="group-select-container">
                                                 <Select
                                                     className="group-select"

@@ -137,9 +137,11 @@
   text-align: left;
   white-space: wrap;
   z-index: 1;
+  width: fit-content;
+}
+.subcover{
   width: 400%;
 }
-
 .group-select {
   position: relative;
   width: 179px;

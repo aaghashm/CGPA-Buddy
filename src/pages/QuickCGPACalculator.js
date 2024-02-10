@@ -294,8 +294,9 @@ const QuickCGPACalculator = () => {
         <b className="form-title">Enter Grades for Respective Subjects</b>
         {departments[department].semesters[semester].map((subjectData, index) => (
           <div key={index} className={`subject ${selectedSubject === subjectData ? 'selected' : ''}`} >
-            <div className="subject-item" />
-            <div className="subname" onClick={() => handleClickSubject(subjectData)} >{subjectData.subject}</div>
+            <div className="subject-item" />            
+            <div className="subcover">
+            <div className="subname" onClick={() => handleClickSubject(subjectData)} >{subjectData.subject}</div></div>
             <div className="group-select-container">
               <Select
               iconSize={28}

@@ -166,7 +166,10 @@
   z-index: 1;
  text-overflow: ellipsis;
  white-space: wrap;
- width: 500px;
+ width: fit-content;
+}
+.subcover{
+width: 200%;
 }
 .chakra-select__icon-wrapper emotion-cache-iohxn1{
   visibility: hidden;
