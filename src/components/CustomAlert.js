@@ -39,16 +39,15 @@ const CustomAlert = ({ isOpen, onClose, header, alertText }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="sm">
       <ModalOverlay />
-      <ModalContent borderRadius="md">
+      <ModalContent borderRadius="md" maxW="80%" mx="auto" mt="auto" mb="auto">
         <ModalHeader fontWeight="bold">{header}</ModalHeader>
         <ModalBody>
           {formatAlertText()}
         </ModalBody>
         <ModalFooter justifyContent="center">
           <Flex justify="center" align="center" w="100%">
-          <Button colorScheme="green" mr="10px" w ="25%" onClick={onClose}>OK</Button>
-            <Button colorScheme="gray" mr="10px" onClick={() => copyToClipboard(alertText)}>Copy</Button>
-            
+            <Button colorScheme="green" mr="10px" w ="25%" size="sm" boxShadow="md" onClick={onClose}>OK</Button>
+            <Button colorScheme="gray" mr="10px" size="sm" boxShadow="md" onClick={() => copyToClipboard(alertText)}>Copy</Button>
           </Flex>
         </ModalFooter>
       </ModalContent>
