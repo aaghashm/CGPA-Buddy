@@ -129,9 +129,9 @@
   max-width: 100%;
 }
 .form-title {
-  width: 90%;
+  width: 98%;
   position: relative;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 100%;
   display: inline-block;
   font-family: var(--menu);
