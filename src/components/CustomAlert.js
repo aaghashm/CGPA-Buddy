@@ -8,33 +8,58 @@ const CustomAlert = ({ isOpen, onClose, header, alertText }) => {
   };
 
   // Function to format the alert message with specified styles
-  const formatAlertText = () => {
-    // Split the alertText by newline characters
-    const lines = alertText.split("\n");
-    return lines.map((line, index) => {
-      // Check if the line contains specific keywords to be formatted
-      if (line.startsWith("CGPA:") || line.startsWith("No of Arrears:") || line.startsWith("Arrear Subject Names:")) {
-        // Split the line by the colon (:) character
-        const parts = line.split(":");
-        // If there are two parts (keyword and value), return them with the value in bold
-        if (parts.length === 2) {
-          let valueColor = "green"; // Default color for values
-          if (line.startsWith("No of Arrears:")) {
-            valueColor = "red"; // Red color for No of Arrears value
-          }
+  // Function to format the alert message with specified styles
+// Function to format the alert message with specified styles
+// Function to format the alert message with specified styles
+const formatAlertText = () => {
+  // Split the alertText by newline characters
+  const lines = alertText.split("\n");
+  return lines.map((line, index) => {
+    // Check if the line contains specific keywords to be formatted
+    if (line.startsWith("CGPA:") || line.startsWith("No of Arrears:") || line.startsWith("Arrear Subject Names:")) {
+      // Split the line by the colon (:) character
+      const parts = line.split(":");
+      // If there are two parts (keyword and value)
+      if (parts.length === 2) {
+        let valueColor = "green"; // Default color for values
+        if (line.startsWith("No of Arrears:")) {
+          valueColor = "red"; // Red color for No of Arrears value
+        }
+        if (line.startsWith("Arrear Subject Names:")) {
+          // Split the Arrear Subject Names by comma and map through each subject
+          const subjects = parts[1].split(",").map((subject, subIndex) => (
+            <React.Fragment key={subIndex}>
+              <br/>
+              {subIndex+1 + ")"} {/* Add <br /> before each subject except the first one */}
+              <span>{subject.trim()}</span> {/* Trim to remove extra whitespace */}
+            </React.Fragment>
+          ));
           return (
             <div key={index}>
               <Text>
-                {renderBoldText(parts[0], "#000", "xm")}&nbsp;:&nbsp;{renderBoldText(parts[1], valueColor)}
+                {renderBoldText(parts[0], "#000", "xm")}&nbsp;:&nbsp;
+                <span style={{ marginLeft: "8px" }}>{subjects}</span>
               </Text>
             </div>
           );
         }
+        // Render other fields with bold values
+        return (
+          <div key={index}>
+            <Text>
+              {renderBoldText(parts[0], "#000", "xm")}&nbsp;:&nbsp;{renderBoldText(parts[1], valueColor)}
+            </Text>
+          </div>
+        );
       }
-      // If the line doesn't contain specific keywords, render it as regular text
-      return <Text key={index}>{line}</Text>;
-    });
-  };
+    }
+    // If the line doesn't contain specific keywords, render it as regular text
+    return <Text key={index}>{line}</Text>;
+  });
+};
+
+
+
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="sm">
