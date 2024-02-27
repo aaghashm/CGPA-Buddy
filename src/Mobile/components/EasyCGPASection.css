@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.MARK-CALCULATION-REMOVEBG-PREV-ICON1 {
+  width: 155.1px;
+  height: 141px;
+  position: absolute;
+  margin: 0 !important;
+  right: -98px;
+  object-fit:contain;
+}
+
+.IMAGE-QC1 {
+  height: 56px;
+  width: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 10px; /* Replaced with specific padding value */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.QUICK-CALCULATE-CGPA1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: 23px; /* Replaced with specific font size */
+  line-height: 100%;
+  font-weight: 700;
+  font-family: "Saira Condensed"; /* Replaced with specific font family */
+  white-space: pre-wrap;
+}
+
+.QUICK-CALCULATE-CGPA-WRAPPER {
+  flex: 1;
+  flex-direction: row;
+}
+
+.FRAME-CONTAINER,
+.IMAGE-Q-C-INNER,
+.QUICK-CALCULATE-CGPA-WRAPPER {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.FRAME-CONTAINER {
+  align-self: stretch;
+  flex-direction: row;
+}
+
+.IMAGE-Q-C-INNER {
+  flex: 1;
+  flex-direction: column;
+}
+
+.BUTTON1 {
+  height: 22px;
+  width: 2px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -1px;
+  left: 0.5px;
+  background-color: #12b76a; /* Replaced with specific color value */
+  z-index: 1;
+}
+
+.IMAGE-Q-C,
+.QC-BODY1 {
+  align-self: stretch;
+  position: relative;
+}
+
+.IMAGE-Q-C {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px; /* Replaced with specific gap value */
+}
+
+.QC-BODY1 {
+  height: 50px;
+  font-size: 10px; /* Replaced with specific font size */
+  line-height: 170%;
+  font-family: "Inter"; /* Replaced with specific font family */
+  display: inline-block;
+  flex-shrink: 0;
+  padding-right: 12px; /* Replaced with specific padding value */
+}
+
+.QCB-BODY1 {
+  position: relative;
+  line-height: 100%;
+}
+
+.CALCULATE-NOW-BUTTON-ITEM {
+  height: 14.7px;
+  width: 40px;
+  position: relative;
+}
+
+.CALCULATE-NOW-BUTTON1 {
+  border-radius: 10px; /* Replaced with specific border radius */
+  background-color: #12b76a; /* Replaced with specific color value */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 8px 15px 18px; /* Replaced with specific padding value */
+  gap: 6px; /* Replaced with specific gap value */
+  white-space: nowrap;
+  font-size: 16px; /* Replaced with specific font size */
+  color: #1e2023; /* Replaced with specific color value */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.CALCULATE-NOW-BUTTON1:hover {
+  transform: scale(1.03);
+  opacity: .9;
+  transition: transform 0.3s ease;
+}
+
+.IMAGE-Q-C-PARENT,
+.QUICK-CALC-FRAME {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.IMAGE-Q-C-PARENT {
+  padding-left: 10px;
+  align-self: stretch;
+  gap: 12px; /* Replaced with specific gap value */
+}
+
+.QUICK-CALC-FRAME {
+  width: 210px;
+  box-sizing: border-box;
+}
+
+.C-G-P-ICON-FRAME1,
+.C-G-P-ICON-FRAME,
+.EASY-C-G-P-A-SECTION {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.C-G-P-ICON-FRAME {
+  flex: 1;
+  justify-content: space-between;
+  gap: 20px; /* Replaced with specific gap value */
+}
+
+.C-G-P-ICON-FRAME1 {
+  flex: 1;
+}
+
+.EASY-C-G-P-A-SECTION {
+  height:143px ;
+  width: 406px;
+  justify-content: flex-start;
+  padding: 0 8px; /* Replaced with specific padding value */
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 23px; /* Replaced with specific font size */
+  color: #344054; /* Replaced with specific color value */
+  font-family: "Saira Condensed"; /* Replaced with specific font family */
+}
+
+@media screen and (max-width: 450px) {
+  .C-G-P-ICON-FRAME {
+    flex-wrap: wrap;
+  }
+}
+
+.QCB-BODY {
+  position: relative;
+  font-size: 16px; /* Replaced with specific font size */
+  line-height: 100%;
+  font-family: Arial; /* Replaced with specific font family */
+  color: #1e2023; /* Replaced with specific color value */
+  text-align: left;
+}
+
+.ANALYZE-NOW-BUTTON-FRAME {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.CALCULATE-NOW-BUTTON-CHILD {
+  height: 29.5px;
+  width: 30px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.CALCULATE-NOW-BUTTON1 {
+  cursor: pointer;
+  border: 0;
+  padding: 2px;
+  background-color: var(--color-mediumseagreen);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  row-gap: 20px;
+  max-width: 100%;
+}
+
+.CALCULATE-NOW-BUTTON1:hover {
+  transform: scale(1.03);
+  opacity: .9;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 375px) {
+.MARK-CALCULATION-REMOVEBG-PREV-ICON,
+.MARK-CALCULATION-REMOVEBG-PREV-ICON1{
+  display: none;
+}
+}
