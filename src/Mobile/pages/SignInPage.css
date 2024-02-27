@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700&display=swap");
+
+.sign-in-page {
+  background-color: #e0eaff;
+  overflow: hidden;
+  text-align: center;
+  font-size: 24px;
+  color: #696e76;
+  font-family: "Saira Condensed";
+}
+
+.overall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sign-in-page-child {
+  border-radius: 15px;
+  background-color: #f2f4f7;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  max-width: 575px;
+  padding: 40px;
+  position: relative;
+}
+
+.footer-title {
+  font-size: 36px;
+  color: #344054;
+  margin-bottom: 20px;
+}
+
+.enter-field {
+  margin-bottom: 20px;
+}
+
+.enter-college-frame, .enter-password-frame {
+  border-radius: 10px;
+  background-color: #f2f4f7;
+  border: 1px solid #d2c2c2;
+  width: 100%;
+}
+
+.enter-email-input, .enter-password-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.forgot-password {
+  display: block;
+  color: #286ace;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.analuse-button {
+  margin-bottom: 20px;
+}
+
+.sign-in-button {
+  border: none;
+  background-color: #12b76a;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.or-line {
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}
+
+.signup-section {
+  margin-bottom: 20px;
+}
+
+.dont-have-account {
+  margin-right: 10px;
+}
+
+.sign-up {
+  color: #286ace;
+  text-decoration: none;
+}
+
+.continue-with-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
