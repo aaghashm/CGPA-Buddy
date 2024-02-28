@@ -113,7 +113,16 @@ const departments = {
           { subject: "Java Programming", credit: 4 },
           { subject: "Heritage of Tamils", credit: 1 },
         ],
-        "3":[],
+        "3":[
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Engineeringn Thermodynamics", credit: 3 },
+          { subject: "Industrial Metallurgy", credit: 3 },
+          { subject: "Manufacturing Technology II", credit: 3 },
+          { subject: "Strength of Materials", credit: 4 },
+          { subject: "Manufacturing Technology II Laboratory", credit: 1.5 },
+          { subject: "OPEN ELECTIVE: Data Structures", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 }
+        ],
         // Define other semesters here
       }
     },

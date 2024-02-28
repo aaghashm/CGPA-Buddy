@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import "./QuickCGPACalculator.css";
 import CustomAlert from "../components/CustomAlert";
 import departments from "../departments";
+import { Analytics } from "@vercel/analytics/react";
 
 const QuickCGPACalculator = () => {
   const [semester, setSemester] = useState("1");
@@ -98,6 +99,7 @@ const QuickCGPACalculator = () => {
   return (
 
     <div className="quick-cgpa-calculator">
+      <Analytics/>
       <Header
         titleWord1="QUICK"
         titleWord2="CGPA"

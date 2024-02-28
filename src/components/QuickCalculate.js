@@ -33,7 +33,10 @@ const QuickCalculate = () => {
             <div className="button" />
           </div>
           <div className="qc-body">
-            ENTER YOUR GRADES TO QUICKLY CALCULATE YOUR CGPA.
+            ENTER YOUR GRADES TO QUICKLY CALCULATE YOUR CGPA. 
+          </div>
+          <div className="qc-body">
+            <b>Created by - Aaghash M ,II-AIML.</b> 
           </div>
           <button className="calculate-now-button1" onClick={handleCalculateNowClick}>
             <div className="analyze-now-button-frame">

@@ -5,6 +5,7 @@ import FOOTERFRAME from "../components/FooterFrame";
 import "./QuickCGPAMob.css";
 import CustomAlert from "../../components/CustomAlert";
 import departments from "../../departments";
+import { Analytics } from "@vercel/analytics/react";
 
 const QuickCGPAMob = () => {
   const [semester, setSemester] = useState("1");
@@ -97,6 +98,7 @@ const QuickCGPAMob = () => {
 
   return (
     <div className="quick-cgpa-calculator">
+      <Analytics/>
       <HEADERMOB
         word1="QUICK"
         word2=" CGPA"
