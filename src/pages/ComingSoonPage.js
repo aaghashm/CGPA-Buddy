@@ -1,5 +1,7 @@
 import "./ComingSoonPage.css";
 import { useNavigate } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const ComingSoonPage = () => {
   const navigate = useNavigate();
@@ -10,6 +12,8 @@ const ComingSoonPage = () => {
   };
   return (
     <footer className="coming-soon-page">
+      <Analytics/>
+      <SpeedInsights/>
       <main className="coming-soon-page-content">
         <div className="back-frame" />
         <section className="inner-frame">

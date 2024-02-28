@@ -2,6 +2,8 @@
 import "./ComingSoonMob.css";
 
 import { useNavigate } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const ComingSoonPageMob = () => {
     const navigate = useNavigate();
@@ -11,6 +13,8 @@ const ComingSoonPageMob = () => {
   }
   return (
     <div className="coming-soon-page-mob">
+      <Analytics/>
+      <SpeedInsights/>
       <section className="inner-rectangle-frame">
         <h1 className="this-page-is-container">
           <span className="textt">{`THIS PAGE IS `}</span>
