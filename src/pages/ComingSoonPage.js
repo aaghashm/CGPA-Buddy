@@ -13,6 +13,7 @@ const ComingSoonPage = () => {
   return (
     <footer className="coming-soon-page">
       <Analytics/>
+      <SpeedInsights/>
       <main className="coming-soon-page-content">
         <div className="back-frame" />
         <section className="inner-frame">
