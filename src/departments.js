@@ -55,7 +55,16 @@ const departments = {
           { subject: "Java Fundamentals", credit: 3 },
           { subject: "Data Structures and Algorithms", credit: 4 }
         ],
-        "3":[],
+        "3":[
+          { subject: "Design and Analysis of Algorithms", credit: 3 },
+          { subject: "Advanced Java Programming", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 },
+          { subject: "Analog Circuits", credit: 3 },
+          { subject: "Signals and Systems", credit: 3 },
+          { subject: "Analog Circuits Laboratory", credit: 1.5 },
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Probability and Random Processes", credit: 4 }
+        ],
         // Define other semesters here
       }
     },
@@ -80,18 +89,18 @@ const departments = {
           { subject: "Java Fundamentals", credit: 3 },
           { subject: "Heritage of Tamils", credit: 1 }
         ],
-        /*
         "3":[
-          { subject: "Universal Human Values", credit: 3 },
           { subject: "Electromagnetic Fields", credit: 4 },
           { subject: "Circuits and Devices", credit: 4},
           { subject: "DC Machines and Transformers", credit: 3 },
-          { subject: "Tamils and Technology", credit: 1 },
           { subject: "Circuits and Devices Laboratory", credit: 1.5 },
           { subject: "DC Machines and Transformers Laboratory", credit: 1.5 },
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Design and Analysis of Algorithms", credit: 3 },
+          { subject: "Advanced Java Programming", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 },
         ],
         // Define other semesters here
-        */
       }
     },
     MECHANICAL: {
