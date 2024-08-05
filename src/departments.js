@@ -99,6 +99,12 @@ const departments = {
           { subject: "Advanced Java Programming", credit: 3 },
           { subject: "Front End Development using React", credit: 3 },
           { subject: "Tamils and Technology", credit: 1 },
+          { subject: "Computer Graphics and Multimedia", credit: 4 },
+          { subject: "Object Oriented analysis and design", credit: 4 },
+          { subject: "Networking and Communication", credit: 4 },
+          { subject: "Managing Cloud and Containerization", credit: 3 },
+          { subject: "Testing Methodologies and Tools", credit: 3 },
+          { subject: "REST APPLICATION DEVELOPMENT USING SPRING BOOT AND JPA", credit: 3 }
         ],
         "1": [
           { subject: "Physical Sciences", credit: 4 },
