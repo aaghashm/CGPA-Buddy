@@ -73,6 +73,80 @@ const departments = {
         // Define other semesters here
       }
     },
+    "AI & DS": {
+      semesters: {
+        "All":[
+          { subject: "Physical Sciences", credit: 4 },
+          { subject: "Physical Sciences Laboratory", credit: 1.5 },
+          { subject: "Agile Product Development", credit: 3 },
+          { subject: "Programming for Problem Solving(c++)", credit: 4 },
+          { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
+          { subject: "Digital Logic and Design", credit: 4 },
+          { subject: "Discrete Mathematics", credit: 4 },
+          { subject: "Computer Organisation and Architecture", credit: 3 },
+          { subject: "PC Hardware and Trouble Shooting Laboratory", credit: 1.5 },
+          { subject: "Applied Linear Algebra", credit: 4 },
+          { subject: "Technical English", credit: 3 },
+          { subject: "Spoken English Laboratory", credit: 1.5 },
+          { subject: "Data Structures and Algorithms", credit: 4 },
+          { subject: "Managing Data using RDBMS", credit: 4 },
+          { subject: "Java Fundamentals", credit: 3 },
+          { subject: "Heritage of Tamils", credit: 1 },
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Operating Systems", credit: 4 },
+          { subject: "Probability and Statistics", credit: 4 },
+          { subject: "Design and Analysis of Algorithms", credit: 3 },
+          { subject: "Advanced Java Programming", credit: 3 },
+          { subject: "Front End Development using React", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 },
+          { subject: "Data Warehousing and Data Mining", credit: 4 },
+          { subject: "Intelligent Systems", credit: 4 },
+          { subject: "Networking and Communication", credit: 4 },
+          { subject: "Managing Cloud and Containerization", credit: 3 },
+          { subject: "Testing Methodologies and Tools", credit: 3 },
+          { subject: "REST APPLICATION DEVELOPMENT USING SPRING BOOT AND JPA", credit: 3 }
+        ],
+        "1": [
+          { subject: "Physical Sciences", credit: 4 },
+          { subject: "Physical Sciences Laboratory", credit: 1.5 },
+          { subject: "Agile Product Development", credit: 3 },
+          { subject: "Programming for Problem Solving(c++)", credit: 4 },
+          { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
+          { subject: "Digital Logic and Design", credit: 4 },
+          { subject: "Discrete Mathematics", credit: 4 }
+        ],
+        "2": [
+          { subject: "Computer Organisation and Architecture", credit: 3 },
+          { subject: "PC Hardware and Trouble Shooting Laboratory", credit: 1.5 },
+          { subject: "Applied Linear Algebra", credit: 4 },
+          { subject: "Technical English", credit: 3 },
+          { subject: "Spoken English Laboratory", credit: 1.5 },
+          { subject: "Data Structures and Algorithms", credit: 4 },
+          { subject: "Managing Data using RDBMS", credit: 4 },
+          { subject: "Java Fundamentals", credit: 3 },
+          { subject: "Heritage of Tamils", credit: 1 }
+        ],
+        
+        "3": [
+          { subject: "Universal Human Values", credit: 3 },
+          { subject: "Operating Systems", credit: 4 },
+          { subject: "Probability and Statistics", credit: 4 },
+          { subject: "Design and Analysis of Algorithms", credit: 3 },
+          { subject: "Advanced Java Programming", credit: 3 },
+          { subject: "Front End Development using React", credit: 3 },
+          { subject: "Tamils and Technology", credit: 1 }
+          ],
+        "4": [
+          { subject: "Data Warehousing and Data Mining", credit: 4 },
+          { subject: "Intelligent Systems", credit: 4 },
+          { subject: "Networking and Communication", credit: 4 },
+          { subject: "Managing Cloud and Containerization", credit: 3 },
+          { subject: "Testing Methodologies and Tools", credit: 3 },
+          { subject: "REST APPLICATION DEVELOPMENT USING SPRING BOOT AND JPA", credit: 3 }
+        ]
+        // Define other semesters here
+      }
+    },
     "CSE": {
       semesters: {
         "All":[
