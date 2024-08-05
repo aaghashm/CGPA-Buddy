@@ -1,16 +1,16 @@
-import React, { useState,useEffect } from "react";
 import { Select } from "@chakra-ui/react";
-import HEADERMOB from "../components/HeaderMob";
-import FOOTERFRAME from "../components/FooterFrame";
-import "./QuickCGPAMob.css";
-import CustomAlert from "../../components/CustomAlert";
-import departments from "../../departments";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import React, { useEffect, useState } from "react";
+import CustomAlert from "../../components/CustomAlert";
+import departments from "../../departments";
+import FOOTERFRAME from "../components/FooterFrame";
+import HEADERMOB from "../components/HeaderMob";
+import "./QuickCGPAMob.css";
 
 const QuickCGPAMob = () => {
   const [semester, setSemester] = useState("1");
-  const [department, setDepartment] = useState("CSE & ALLIED BRANCHES");
+  const [department, setDepartment] = useState("CSE");
   const [grades, setGrades] = useState({});
   const [alertIsOpen, setAlertIsOpen] = useState(false); // State for controlling CustomAlert
   const [alertHeader, setAlertHeader] = useState(""); // State for alert header

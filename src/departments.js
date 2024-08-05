@@ -1,5 +1,5 @@
 const departments = {
-    "AIML": {
+    "AI & ML": {
       semesters: {
         "All":[
           { subject: "Physical Sciences", credit: 4 },
