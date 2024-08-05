@@ -24,7 +24,13 @@ const departments = {
           { subject: "Design and Analysis of Algorithms", credit: 3 },
           { subject: "Advanced Java Programming", credit: 3 },
           { subject: "Front End Development using React", credit: 3 },
-          { subject: "Tamils and Technology", credit: 1 }
+          { subject: "Tamils and Technology", credit: 1 },
+          { subject: "Artificial Intelligence and Expert Systems", credit: 4 },
+          { subject: "Data Science", credit: 4 },
+          { subject: "Networking and Communication", credit: 4 },
+          { subject: "Managing Cloud and Containerization", credit: 3 },
+          { subject: "Testing Methodologies and Tools", credit: 3 },
+          { subject: "REST APPLICATION DEVELOPMENT USING SPRING BOOT AND JPA", credit: 3 }
         ],
         "1": [
           { subject: "Physical Sciences", credit: 4 },
@@ -55,7 +61,15 @@ const departments = {
           { subject: "Advanced Java Programming", credit: 3 },
           { subject: "Front End Development using React", credit: 3 },
           { subject: "Tamils and Technology", credit: 1 }
-       ],
+          ],
+        "4": [
+          { subject: "Artificial Intelligence and Expert Systems", credit: 4 },
+          { subject: "Data Science", credit: 4 },
+          { subject: "Networking and Communication", credit: 4 },
+          { subject: "Managing Cloud and Containerization", credit: 3 },
+          { subject: "Testing Methodologies and Tools", credit: 3 },
+          { subject: "REST APPLICATION DEVELOPMENT USING SPRING BOOT AND JPA", credit: 3 }
+        ]
         // Define other semesters here
       }
     },
@@ -87,7 +101,7 @@ const departments = {
           { subject: "Probability and Random Processes", credit: 4 }
         ],
         "1": [
-         { subject: "Technical English", credit: 3 },
+          { subject: "Technical English", credit: 3 },
           { subject: "Linear Algebra and Calculus", credit: 4 },
           { subject: "Spoken English Laboratory", credit: 1.5 },
           { subject: "Workshop and Manufacturing Practices Laboratory", credit: 1.5 },
@@ -148,13 +162,13 @@ const departments = {
         ],
         "1": [
           { subject: "Technical English", credit: 3 },
-           { subject: "Transform Calculus", credit: 4 },
-           { subject: "Spoken English Laboratory", credit: 1.5 },
-           { subject: "Engineering Graphics Laboratory", credit: 1.5 },
-           { subject: "Agile Product Development and Developer Tools", credit: 3 },
-           { subject: "Programming for Problem Solving", credit: 4 },
-           { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
-         ],
+            { subject: "Transform Calculus", credit: 4 },
+            { subject: "Spoken English Laboratory", credit: 1.5 },
+            { subject: "Engineering Graphics Laboratory", credit: 1.5 },
+          { subject: "Agile Product Development and Developer Tools", credit: 3 },
+          { subject: "Programming for Problem Solving", credit: 4 },
+          { subject: "Designing web Applications using HTML,CSS...", credit: 3 },
+          ],
         "2": [
           { subject: "Probability and Numerical Methods", credit: 4 },
           { subject: "Workshop and Manufacturing Practices", credit: 2 },
