@@ -34,7 +34,7 @@ const EASYCGPASECTION = () => {
             </div>
             <div className="QC-BODY1">
               Enter your grades to quickly calculate your CGPA.
-              <a href='https://www.linkedin.com/in/aaghash-m-105278250/'><p><b>Created by - AAGHASH M , II AIML</b></p></a>
+              <a href='https://www.linkedin.com/in/aaghash-m-105278250/'><p><b>Created by - AAGHASH M , III AIML</b></p></a>
             </div>
             <button className="CALCULATE-NOW-BUTTON1" onClick={handleCalculateNowMob} style={{width:"99%"}}>
             <div className="ANALYZE-NOW-BUTTON-FRAME">
